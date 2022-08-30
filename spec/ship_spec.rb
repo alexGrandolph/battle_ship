@@ -40,7 +40,7 @@ RSpec.describe Ship do
     cruiser.hit
     submarine.hit
     expect(cruiser.health).to eq(2)
-    expect(submarine.health).to eq(2)
+    expect(submarine.health).to eq(1)
 
 
   end 
