@@ -8,6 +8,9 @@ class Ship
     @sunk = false
   end 
 
+  def sunk?
+    @sunk
+  end 
   
 
 end
