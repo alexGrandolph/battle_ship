@@ -17,11 +17,11 @@ RSpec.describe Ship do
     expect(cruiser.name).to eq('Cruiser')
     expect(cruiser.size).to eq(3)
     expect(cruiser.health).to eq(3)
-    expect(cruiser.sunk?).to eq(false)
+    expect(cruiser.sunk).to eq(false)
 
     expect(submarine.name).to eq('Submarine')
     expect(submarine.size).to eq(2)
-    expect(submarine.sunk?).to eq(false)
+    expect(submarine.sunk).to eq(false)
   end
 
 end
