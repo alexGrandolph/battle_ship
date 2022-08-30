@@ -41,7 +41,17 @@ RSpec.describe Ship do
     submarine.hit
     expect(cruiser.health).to eq(2)
     expect(submarine.health).to eq(1)
+  end 
 
+  it 'Ship with one health being hit changes sunk? to true' do
+    cruiser = Ship.new('Cruiser', 3)
+    submarine = Ship.new('Submarine', 2)
+    
+    cruiser.hit
+    cruiser.hit
+    cruiser.hit
+   
+    expect(cruiser.sunk?).to eq(true)
 
   end 
 end
