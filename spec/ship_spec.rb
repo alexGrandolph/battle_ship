@@ -24,4 +24,13 @@ RSpec.describe Ship do
     expect(submarine.sunk).to eq(false)
   end
 
+  it 'has readable attributes' do
+    cruiser = Ship.new('Cruiser', 3)
+    submarine = Ship.new('Submarine', 2)
+    
+    expect(cruiser.sunk?).to eq(false)
+    expect(submarine.sunk?).to eq(false)
+
+
+  end 
 end

@@ -6,8 +6,8 @@ class Ship
     @size = size
     @health = @size
     @sunk = false
-
   end 
 
+  
 
 end
